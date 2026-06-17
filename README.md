@@ -177,9 +177,11 @@ Las pruebas realizadas validaron el correcto funcionamiento del código y del ci
 Imágen 8: Circuito final.
 
 7. Conclusiones.
+   
 En este trabajo se desarrolló un prototipo de control y monitoreo de goteo basado en el microcontrolador PIC16F887. El sistema permite detectar el paso de gotas mediante un sensor infrarrojo, visualizar el conteo en displays de siete segmentos, comunicarse con una computadora a través de UART y accionar un motor paso a paso para regular el caudal. De esta manera, se integraron conceptos de conversión analógica-digital, manejo de interrupciones, multiplexado de displays, comunicación serial y control de actuadores.
 
 
-8. Bibliografía
+9. Bibliografía
+   
 Datasheet de sensor IR HW 201: https://www.handsontec.com/dataspecs/sensor/IR%20Obstacle%20Detector.pdf
 Datasheet motor paso a paso 28BYJ-48: https://www.alldatasheet.com/datasheet-pdf/pdf/1132391/ETC1/28BYJ-48.html
