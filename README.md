@@ -1,16 +1,16 @@
 # Contador-de-gotas
 
-Asignatura: Electrónica Digital II - Universidad Nacional de Córdoba
+*Asignatura:* Electrónica Digital II - Universidad Nacional de Córdoba
 
-Integrantes:
+*Integrantes:*
 
-Perotti, Josefina
+*Perotti, Josefina
 
-Roldan, Paloma
+*Roldan, Paloma
 
-Villafañe, Maria Dolores
+*Villafañe, Maria Dolores
 
-Profesor: Blasco, Marcos Javier
+*Profesor: Blasco, Marcos Javier*
 
 1. Descripción General del Proyecto
 El proyecto consiste en el desarrollo de  un sistema capaz de monitorear y regular el caudal de goteo de una solución intravenosa para pacientes en UTI (Unidad de Terapia Intensiva). En un principio, desde la computadora, el usuario deberá elegir entre dos valores posibles de caudales: 20 gotas para aquellos pacientes que se encuentren más estables, y 30 para aquellos que se encuentren más graves. 
@@ -20,12 +20,12 @@ Mediante un sensor infrarrojo, el microcontrolador PIC16F887 detecta el paso de 
 
 El sistema es capaz de:
 Detectar el paso de gotas utilizando un sensor infrarrojo.
-Convertir la señal del sensor mediante el ADC interno del PIC16F887.
-Contabilizar la cantidad de gotas detectadas.
-Mostrar el conteo en dos displays de siete segmentos multiplexados.
-Recibir comandos desde una computadora mediante UART.
-Controlar el sentido de giro de un motor paso a paso.
-Configurar objetivos de conteo mediante comunicación serie.
+*Convertir la señal del sensor mediante el ADC interno del PIC16F887.
+*Contabilizar la cantidad de gotas detectadas.
+*Mostrar el conteo en dos displays de siete segmentos multiplexados.
+*Recibir comandos desde una computadora mediante UART.
+*Controlar el sentido de giro de un motor paso a paso.
+*Configurar objetivos de conteo mediante comunicación serie.
 
 Fuera de alcance
 Regulación automática cerrada del caudal.
