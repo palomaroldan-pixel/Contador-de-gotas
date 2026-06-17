@@ -58,6 +58,7 @@ Esquema del circuito:
 Imágen 2: Esquemático del circuito
 Descripción del circuito
 El sensor infrarrojo se conecta al canal analógico AN0 del PIC16F887. La señal generada por el sensor es digitalizada mediante el ADC interno. Los displays de siete segmentos son controlados mediante multiplexado utilizando PORTD para los segmentos y PORTB para la selección de cada display. La comunicación con la computadora se realiza mediante el módulo EUSART del microcontrolador utilizando los pines RC6 (TX) y RC7 (RX). El motor paso a paso 28BYJ-48 es accionado mediante un módulo ULN2003 conectado al PORTC.
+
 2.2. Arquitectura de Software
 El firmware se basa en una arquitectura de interrupciones.
 Las principales tareas son:
@@ -71,56 +72,96 @@ Imágen 3: Diagrama de flujo
 
 
 3. Especificaciones eléctricas, alimentación y entorno.
+
 3.1. Parámetros de alimentación y consumo.
+
 3.1.1. Tensión de operación del sistema: 5V
+
 3.1.2. Método de alimentación: para el PIC16F887, se decidió alimentarlo con USB, mientras que para los sensores infrarrojos y motor paso a paso, se utilizó una fuente de alimentación externa de 5V.
+
 3.1.3. Consumo estimado: 
+
 Modo activo: aproximadamente 200 mA a 300 mA (dependiendo del motor).
 PIC únicamente: aproximadamente 10 mA.
+
 3.2. Herramientas de software: MPLAB X IDE [v5.35] y compilador XC8 [v5.87]
+
 3.3. Hardware de Programación/Depuración: Pickit 3.
+
 3.4. Configuración de bits:
+
 Oscilador: INTRC (Oscilador interno)
+
 Watchdog Timer: OFF
+
 Master Clear: ON
+
 3.5. Periféricos utilizados:
+
 ADC
 Timer0
 EUSART
 Interrupciones externas
 Puertos digitales
+
 3.6. Gestión de interrupciones
 El PIC16F887 posee un único vector de interrupción ubicado en la dirección 0x0004.
 La prioridad se implementa mediante software evaluando secuencialmente las banderas:
 Timer0
 ADC
 UART
+
 Timer0 se verifica primero porque garantiza el correcto refresco de los displays y evita parpadeos perceptibles. Luego, se tiene en cuenta la conversión del ADC realizada por el sensor IR al momento de detección de gotas, y por último, el envío de caracteres por medio del USB/UART.
 
+
 4. Proceso de Integración y Desarrollo
+
 Etapa 1: Configuración inicial del microcontrolador.
+
 Oscilador interno.
+
 Configuración de puertos.
+
 Encendido de LEDs de prueba.
+
 Etapa 2: Implementación del ADC.
+
 Lectura del sensor infrarrojo.
+
 Ajuste de umbrales de detección.
+
 Conteo básico de gotas.
+
 Etapa 3: Implementación de displays.
+
 Conversión decimal.
+
 Multiplexado mediante Timer0.
+
 Etapa 4: Implementación de UART.
+
 Recepción de comandos.
+
 Envío de mensajes de estado.
+
 Etapa 5: Implementación del motor paso a paso.
+
 Giro horario.
+
 Giro antihorario.
+
 Integración con comandos UART.
+
 Etapa 6: Integración completa.
+
 Sensor.
+
 Displays.
+
 UART.
+
 Motor.
+
 Interrupciones.
 
 5. Ensayo, pruebas y resultados.
