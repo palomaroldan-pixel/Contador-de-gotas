@@ -36,19 +36,20 @@ El sistema es capaz de:
 
 Fuera de alcance
 
-Regulación automática cerrada del caudal.
+*Regulación automática cerrada del caudal.
 
-Almacenamiento histórico de datos.
+*Almacenamiento histórico de datos.
 
-Conectividad inalámbrica (WiFi/Bluetooth).
+*Conectividad inalámbrica (WiFi/Bluetooth).
 
-Interfaz gráfica dedicada.
+*Interfaz gráfica dedicada.
 
-Alarmas clínicas certificadas.
+*Alarmas clínicas certificadas.
 
-Validación clínica en pacientes.
+*Validación clínica en pacientes.
 
 1.2. Posibles etapas futuras
+
 Como trabajo futuro, el sistema podría incorporar un lazo de control automático que permita ajustar el motor paso a paso de manera autónoma para mantener el caudal deseado. De esta forma, el equipo sería capaz de corregir variaciones en el flujo sin intervención del usuario.
 Asimismo, podrían añadirse alarmas sonoras y visuales para alertar sobre fallas o desvíos del caudal programado. También sería posible desarrollar una interfaz gráfica con comunicación inalámbrica para realizar el monitoreo remoto del sistema en tiempo real.
 Finalmente, se podrían incorporar funciones de almacenamiento de datos y cálculo automático de parámetros como las gotas por minuto y el volumen total infundido, brindando un seguimiento más completo del tratamiento.
@@ -62,16 +63,25 @@ Imágen 1: Diagrama de bloques
 Esquema del circuito:
 
 Imágen 2: Esquemático del circuito
+
 Descripción del circuito
+
 El sensor infrarrojo se conecta al canal analógico AN0 del PIC16F887. La señal generada por el sensor es digitalizada mediante el ADC interno. Los displays de siete segmentos son controlados mediante multiplexado utilizando PORTD para los segmentos y PORTB para la selección de cada display. La comunicación con la computadora se realiza mediante el módulo EUSART del microcontrolador utilizando los pines RC6 (TX) y RC7 (RX). El motor paso a paso 28BYJ-48 es accionado mediante un módulo ULN2003 conectado al PORTC.
 
 2.2. Arquitectura de Software
+
 El firmware se basa en una arquitectura de interrupciones.
+
 Las principales tareas son:
+
 Multiplexado de displays mediante Timer0.
+
 Detección de gotas mediante interrupciones del ADC.
+
 Recepción de comandos UART.
+
 Control de movimiento del motor paso a paso.
+
 Conversión del conteo de gotas para visualización decimal.
 
 Imágen 3: Diagrama de flujo
