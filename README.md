@@ -1,25 +1,14 @@
 # Contador-de-gotas
 
-CÁTEDRA ELECTRÓNICA DIGITAL 2
+Asignatura: Electrónica Digital II - Universidad Nacional de Córdoba
 
-TRABAJO INTEGRADOR
-
-SISTEMA DE CONTROL DE GOTERO DE SUERO
-
-AÑO 2026
-
-Carrera: Ingeniería biomédica
-
-Integrantes
+Integrantes:
 
 Perotti, Josefina
-45241763
-Roldán, Paloma
-43358920
-Villafañe, María Dolores
-44706052
+Roldan, Paloma
+Villafañe, Maria Dolores
 
-Profesor: Blasco, Marcos
+Profesor: Blasco, Marcos Javier
 
 1. Descripción General del Proyecto
 El proyecto consiste en el desarrollo de  un sistema capaz de monitorear y regular el caudal de goteo de una solución intravenosa para pacientes en UTI (Unidad de Terapia Intensiva). En un principio, desde la computadora, el usuario deberá elegir entre dos valores posibles de caudales: 20 gotas para aquellos pacientes que se encuentren más estables, y 30 para aquellos que se encuentren más graves. 
