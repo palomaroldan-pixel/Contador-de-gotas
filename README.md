@@ -13,6 +13,7 @@
 *Profesor: Blasco, Marcos Javier*
 
 1. Descripción General del Proyecto
+   
 El proyecto consiste en el desarrollo de  un sistema capaz de monitorear y regular el caudal de goteo de una solución intravenosa para pacientes en UTI (Unidad de Terapia Intensiva). En un principio, desde la computadora, el usuario deberá elegir entre dos valores posibles de caudales: 20 gotas para aquellos pacientes que se encuentren más estables, y 30 para aquellos que se encuentren más graves. 
 Mediante un sensor infrarrojo, el microcontrolador PIC16F887 detecta el paso de las gotas y, a partir de esta información, muestra en dos displays la cantidad de gotas por minuto. Luego, el usuario deberá comparar el valor mostrado en los displays con el valor seteado deseado y con esa información, dependiendo si el goteo fue mayor o menor a lo esperado, podrá decidir con dos botones, si abrir o cerrar el canal del gotero.
 
@@ -189,13 +190,16 @@ Imágen 4: Parte del perfus perforada.
 
 Imágen 5: Sensor IR colocado en el perfus.
 
+
 Para el motor, primero se comprobó su correcto funcionamiento programando un código para que éste girara sin parar. Luego, se programó para que girara una cierta cantidad de grados en sentido horario y luego en sentido antihorario, nuevamente sin parar. Después, se colocaron dos botones de forma temporaria para introducir en el código la posibilidad de hacer que gire hacia un lado una cantidad definida de grados, y con el otro botón, hacia el lado contrario. Por último, se eliminaron los botones y se coordinó el sentido de giro por medio de comunicación serie.
 
 
 Imágen 6: Motor paso a paso 28byj-48
+
 Por último, se testeó la conexión bidireccional del PIC con la PC usando el programa de visualización Tera Term. Se probó cada comando en orden para verificar que la conexión sea satisfactoria.
 
 Imágen 7: comunicación serie usando Tera Term.
+
 Las pruebas realizadas validaron el correcto funcionamiento del código y del circuito tanto en la simulación en Proteus como en la realidad.
 
 
