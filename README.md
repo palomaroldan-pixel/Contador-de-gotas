@@ -5,7 +5,9 @@ Asignatura: Electrónica Digital II - Universidad Nacional de Córdoba
 Integrantes:
 
 Perotti, Josefina
+
 Roldan, Paloma
+
 Villafañe, Maria Dolores
 
 Profesor: Blasco, Marcos Javier
