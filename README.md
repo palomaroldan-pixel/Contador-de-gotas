@@ -19,6 +19,8 @@ Roldán, Paloma
 Villafañe, María Dolores
 44706052
 
+Profesor: Blasco, Marcos
+
 1. Descripción General del Proyecto
 El proyecto consiste en el desarrollo de  un sistema capaz de monitorear y regular el caudal de goteo de una solución intravenosa para pacientes en UTI (Unidad de Terapia Intensiva). En un principio, desde la computadora, el usuario deberá elegir entre dos valores posibles de caudales: 20 gotas para aquellos pacientes que se encuentren más estables, y 30 para aquellos que se encuentren más graves. 
 Mediante un sensor infrarrojo, el microcontrolador PIC16F887 detecta el paso de las gotas y, a partir de esta información, muestra en dos displays la cantidad de gotas por minuto. Luego, el usuario deberá comparar el valor mostrado en los displays con el valor seteado deseado y con esa información, dependiendo si el goteo fue mayor o menor a lo esperado, podrá decidir con dos botones, si abrir o cerrar el canal del gotero.
