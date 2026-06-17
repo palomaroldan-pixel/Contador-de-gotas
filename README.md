@@ -19,20 +19,33 @@ Mediante un sensor infrarrojo, el microcontrolador PIC16F887 detecta el paso de 
 1.1. Alcances del proyecto
 
 El sistema es capaz de:
-Detectar el paso de gotas utilizando un sensor infrarrojo.
+
+*Detectar el paso de gotas utilizando un sensor infrarrojo.
+
 *Convertir la señal del sensor mediante el ADC interno del PIC16F887.
+
 *Contabilizar la cantidad de gotas detectadas.
+
 *Mostrar el conteo en dos displays de siete segmentos multiplexados.
+
 *Recibir comandos desde una computadora mediante UART.
+
 *Controlar el sentido de giro de un motor paso a paso.
+
 *Configurar objetivos de conteo mediante comunicación serie.
 
 Fuera de alcance
+
 Regulación automática cerrada del caudal.
+
 Almacenamiento histórico de datos.
+
 Conectividad inalámbrica (WiFi/Bluetooth).
+
 Interfaz gráfica dedicada.
+
 Alarmas clínicas certificadas.
+
 Validación clínica en pacientes.
 
 1.2. Posibles etapas futuras
